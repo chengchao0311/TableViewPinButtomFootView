@@ -24,11 +24,13 @@
     [self.tableView setDataSource:self];
     [self.tableView setDelegate:self];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
+    
     UIView * v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 200)];
     [v setBackgroundColor:[UIColor redColor]];
     [v setAlpha:0.5];
+    
     [self.tableView setPinFootView:v];
-    count = 20;
+    count = 2;
 }
 
 

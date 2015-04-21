@@ -10,7 +10,6 @@
 
 @interface PinFootViewTableView : UITableView
 
-- (void)reloadData;
 - (void)setPinFootView:(UIView*)pinFootView;
 
 @end
