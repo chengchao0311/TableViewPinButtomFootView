@@ -33,33 +33,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-4c-x8q">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="cIM-4c-x8q" customClass="PinFootViewTableView">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPe-Op-2Fs">
-                                <rect key="frame" x="0.0" y="600" width="600" height="100"/>
-                                <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="B5U-f2-tyQ"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cPe-Op-2Fs" firstAttribute="top" secondItem="cIM-4c-x8q" secondAttribute="bottom" id="0ei-ID-CJs"/>
                             <constraint firstItem="cIM-4c-x8q" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="HhT-pA-rWg"/>
                             <constraint firstAttribute="trailingMargin" secondItem="cIM-4c-x8q" secondAttribute="trailing" constant="-16" id="T4o-Kt-siF"/>
                             <constraint firstItem="cIM-4c-x8q" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="XAf-F1-Fv5"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="cIM-4c-x8q" secondAttribute="bottom" id="kdQ-JK-QhB"/>
-                            <constraint firstItem="cPe-Op-2Fs" firstAttribute="leading" secondItem="cIM-4c-x8q" secondAttribute="leading" id="r5l-8f-EG6"/>
-                            <constraint firstItem="cPe-Op-2Fs" firstAttribute="trailing" secondItem="cIM-4c-x8q" secondAttribute="trailing" id="vOc-7K-A8h"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lfJ-Cd-7bR"/>
                     <connections>
-                        <outlet property="footView" destination="cPe-Op-2Fs" id="PfK-5X-fTD"/>
                         <outlet property="tableView" destination="cIM-4c-x8q" id="iGc-LT-HCB"/>
                         <outlet property="topC" destination="XAf-F1-Fv5" id="6lo-SS-Qpi"/>
                     </connections>
