@@ -29,8 +29,12 @@
     [v setBackgroundColor:[UIColor redColor]];
     [v setAlpha:0.5];
     
-    [self.tableView setPinFootView:v];
-    count = 2;
+    [self.tableView setPingFootView:v];
+    
+    UIBarButtonItem * btn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(reloadMe)];
+    self.navigationController.navigationBar.topItem.rightBarButtonItem = btn;
+    
+    count = 20;
 }
 
 
@@ -77,6 +81,10 @@
 //                self.footView.frame = CGRectMake(self.footView.frame.origin.x,  self.tableView.frame.size.height, self.footView.frame.size.width, self.footView.frame.size.height);
 //        }
 //    }
+}
+
+- (void)reloadMe{
+    [self.tableView reloadData];
 }
 
 

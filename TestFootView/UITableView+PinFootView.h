@@ -1,5 +1,5 @@
 //
-//  PinFootViewTableView.h
+//  UITableView+PinFootView.h
 //  TestFootView
 //
 //  Created by Xinqi Chan on 4/21/15.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PinFootViewTableView : UITableView
+@interface UITableView (PinFootView)
 
-- (void)setPinFootView:(UIView*)pinFootView;
+@property UIView * pingFootView;
+
+-(void)setPingFootView:(UIView *)newPingFootView;
 
 @end

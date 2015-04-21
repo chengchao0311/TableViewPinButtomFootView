@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		621F3DEA1AE64368000B285F /* PinFootViewTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F3DE91AE64368000B285F /* PinFootViewTableView.m */; };
+		621F3DED1AE64F49000B285F /* UITableView+PinFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F3DEC1AE64F49000B285F /* UITableView+PinFootView.m */; };
 		623AC0A11AE55709002E1CCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 623AC0A01AE55709002E1CCC /* main.m */; };
 		623AC0A41AE55709002E1CCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 623AC0A31AE55709002E1CCC /* AppDelegate.m */; };
 		623AC0A71AE55709002E1CCC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 623AC0A61AE55709002E1CCC /* ViewController.m */; };
@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		621F3DE81AE64368000B285F /* PinFootViewTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PinFootViewTableView.h; sourceTree = "<group>"; };
-		621F3DE91AE64368000B285F /* PinFootViewTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PinFootViewTableView.m; sourceTree = "<group>"; };
+		621F3DEB1AE64F49000B285F /* UITableView+PinFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PinFootView.h"; sourceTree = "<group>"; };
+		621F3DEC1AE64F49000B285F /* UITableView+PinFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PinFootView.m"; sourceTree = "<group>"; };
 		623AC09B1AE55709002E1CCC /* TestFootView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFootView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		623AC09F1AE55709002E1CCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		623AC0A01AE55709002E1CCC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 				623AC0AB1AE55709002E1CCC /* Images.xcassets */,
 				623AC0AD1AE55709002E1CCC /* LaunchScreen.xib */,
 				623AC09E1AE55709002E1CCC /* Supporting Files */,
-				621F3DE81AE64368000B285F /* PinFootViewTableView.h */,
-				621F3DE91AE64368000B285F /* PinFootViewTableView.m */,
+				621F3DEB1AE64F49000B285F /* UITableView+PinFootView.h */,
+				621F3DEC1AE64F49000B285F /* UITableView+PinFootView.m */,
 			);
 			path = TestFootView;
 			sourceTree = "<group>";
@@ -225,8 +225,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				623AC0A71AE55709002E1CCC /* ViewController.m in Sources */,
+				621F3DED1AE64F49000B285F /* UITableView+PinFootView.m in Sources */,
 				623AC0A41AE55709002E1CCC /* AppDelegate.m in Sources */,
-				621F3DEA1AE64368000B285F /* PinFootViewTableView.m in Sources */,
 				623AC0A11AE55709002E1CCC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
