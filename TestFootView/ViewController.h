@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#define kIsHttps 1
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<
+UITableViewDataSource, UITableViewDelegate,
+UIScrollViewDelegate
+#ifdef kIsHttps
+,
+NSURLConnectionDelegate
+#endif
+  >
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIView *footView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *topC;
 
 @end
 
