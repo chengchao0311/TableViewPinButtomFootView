@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UITableView+PinFootView.h"
+
 #define kIsHttps 1
 
 @interface ViewController : UIViewController<
@@ -19,7 +21,6 @@ NSURLConnectionDelegate
   >
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIView *footView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *topC;
 
 @end
