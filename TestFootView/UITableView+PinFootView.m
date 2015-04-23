@@ -44,14 +44,13 @@ static void * PinFVId = &PinFVId;
 }
 
 
--(NSString *)pingFootView{
+-(UIView *)pingFootView{
     return objc_getAssociatedObject(self,PinFVId);
 }
 
 -(void)setPingFootView:(UIView *)newPingFootView{
     if (!self.pingFootView) {
         objc_setAssociatedObject(self, PinFVId, newPingFootView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-        self.pingFootView = newPingFootView;
         [self addSubview:self.pingFootView];
         [self bringSubviewToFront:self.pingFootView];
         [self updatePinFootViewFrame];
@@ -70,12 +69,12 @@ static void * PinFVId = &PinFVId;
 
 - (void)updatePinFootViewFrame{
     if (self.contentSize.height > self.frame.size.height) {
-        self.pingFootView.frame = CGRectMake(self.pingFootView.frame.origin.x, self.contentSize.height, self.pingFootView.frame.size.width, self.pingFootView.frame.size.height);
+        self.pingFootView.frame = CGRectMake(self.pingFootView.frame.origin.x, self.contentSize.height, self.frame.size.width, self.pingFootView.frame.size.height);
     }else{
         if (self.contentSize.height + self.pingFootView.frame.size.height > self.frame.size.height) {
-            self.pingFootView.frame = CGRectMake(self.pingFootView.frame.origin.x, self.contentSize.height, self.pingFootView.frame.size.width, self.pingFootView.frame.size.height);
+            self.pingFootView.frame = CGRectMake(self.pingFootView.frame.origin.x, self.contentSize.height, self.frame.size.width, self.pingFootView.frame.size.height);
         }else{
-            self.pingFootView.frame = CGRectMake(self.pingFootView.frame.origin.x, self.frame.size.height - self.pingFootView.frame.size.height, self.pingFootView.frame.size.width, self.pingFootView.frame.size.height);
+            self.pingFootView.frame = CGRectMake(self.pingFootView.frame.origin.x, self.frame.size.height - self.pingFootView.frame.size.height, self.frame.size.width, self.pingFootView.frame.size.height);
         }
     }
     

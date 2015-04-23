@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "MyView.h"
 
 @interface ViewController (){
     CGFloat oldY;
@@ -25,16 +26,17 @@
     [self.tableView setDelegate:self];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     
-    UIView * v = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 200)];
-    [v setBackgroundColor:[UIColor redColor]];
-    [v setAlpha:0.5];
+    NSArray * array = [[NSBundle mainBundle] loadNibNamed:@"MyView" owner:nil options:nil];
+    MyView * v = [array lastObject];
+    
+    [v.btn addTarget:self action:@selector(ok) forControlEvents:UIControlEventTouchUpInside];
     
     [self.tableView setPingFootView:v];
     
     UIBarButtonItem * btn = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(reloadMe)];
     self.navigationController.navigationBar.topItem.rightBarButtonItem = btn;
     
-    count = 20;
+    count = 2;
 }
 
 
@@ -81,6 +83,10 @@
 //                self.footView.frame = CGRectMake(self.footView.frame.origin.x,  self.tableView.frame.size.height, self.footView.frame.size.width, self.footView.frame.size.height);
 //        }
 //    }
+}
+
+- (void)ok{
+    NSLog(@"Ok");
 }
 
 - (void)reloadMe{

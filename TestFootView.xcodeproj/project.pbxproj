@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		621CAF671AE87EDD00C58C69 /* MyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 621CAF661AE87EDD00C58C69 /* MyView.xib */; };
+		621CAF6A1AE87EEE00C58C69 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 621CAF691AE87EEE00C58C69 /* MyView.m */; };
 		621F3DED1AE64F49000B285F /* UITableView+PinFootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 621F3DEC1AE64F49000B285F /* UITableView+PinFootView.m */; };
 		623AC0A11AE55709002E1CCC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 623AC0A01AE55709002E1CCC /* main.m */; };
 		623AC0A41AE55709002E1CCC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 623AC0A31AE55709002E1CCC /* AppDelegate.m */; };
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		621CAF661AE87EDD00C58C69 /* MyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyView.xib; sourceTree = "<group>"; };
+		621CAF681AE87EEE00C58C69 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		621CAF691AE87EEE00C58C69 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		621F3DEB1AE64F49000B285F /* UITableView+PinFootView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+PinFootView.h"; sourceTree = "<group>"; };
 		621F3DEC1AE64F49000B285F /* UITableView+PinFootView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+PinFootView.m"; sourceTree = "<group>"; };
 		623AC09B1AE55709002E1CCC /* TestFootView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestFootView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +99,9 @@
 				623AC09E1AE55709002E1CCC /* Supporting Files */,
 				621F3DEB1AE64F49000B285F /* UITableView+PinFootView.h */,
 				621F3DEC1AE64F49000B285F /* UITableView+PinFootView.m */,
+				621CAF661AE87EDD00C58C69 /* MyView.xib */,
+				621CAF681AE87EEE00C58C69 /* MyView.h */,
+				621CAF691AE87EEE00C58C69 /* MyView.m */,
 			);
 			path = TestFootView;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621CAF671AE87EDD00C58C69 /* MyView.xib in Resources */,
 				623AC0AA1AE55709002E1CCC /* Main.storyboard in Resources */,
 				623AC0AF1AE55709002E1CCC /* LaunchScreen.xib in Resources */,
 				623AC0AC1AE55709002E1CCC /* Images.xcassets in Resources */,
@@ -228,6 +237,7 @@
 				621F3DED1AE64F49000B285F /* UITableView+PinFootView.m in Sources */,
 				623AC0A41AE55709002E1CCC /* AppDelegate.m in Sources */,
 				623AC0A11AE55709002E1CCC /* main.m in Sources */,
+				621CAF6A1AE87EEE00C58C69 /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
